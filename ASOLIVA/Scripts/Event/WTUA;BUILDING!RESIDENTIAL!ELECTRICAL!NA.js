@@ -5,8 +5,8 @@ if (wfTask == "Application Submittal" && wfStatus == "Accepted - Plan Review Req
 	}
 //Individual exercise 3
 if (wfTask == "Permit Issuance" && wfStatus == "Issued") {
-	//Update ASI field “Permit Expiration Date” to 180 days out
+	//Update ASI field Permit Expiration Date to 180 days out
 		editAppSpecific("Permit Expiration Date", dateAdd(null,180));  
-	//Schedule “Electrical Final” 15 work days from today
+	//Schedule Electrical Final 15 work days from today
 		scheduleInspectDate("Electrical Final",dateAdd(null,15,"Y"),"ADMIN");  
 }
