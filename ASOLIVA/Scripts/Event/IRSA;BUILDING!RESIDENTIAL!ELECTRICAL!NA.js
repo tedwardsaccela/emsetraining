@@ -9,12 +9,12 @@
 
 		updateTask("Inspection","Note", inspComment ,"Electrical Final Rejected");
 		
-		var enfChild = createChild("Enforcement","Incident","Building","Sub-Standard Property","");
+		var childCapID = createChild("Enforcement","Incident","Building","Sub-Standard Property","");
 	
-		if (enfChild != null) {  
+		if (childCapID != null) {  
 
-			editAppSpecific("Source of Complaint","Staff",enfChild);
-			editAppSpecific("Location",inspComment,enfChild);
-			scheduleInspect(enfChild,"Initial Investigation",0); 
+			editAppSpecific("Source of Complaint","Staff",childCapID);
+			editAppSpecific("Location",inspComment,childCapID);
+			scheduleInspect(childCapID,"Initial Investigation",0); 
 		}
 	}	
