@@ -10,3 +10,4 @@ if (wfTask == "Permit Issuance" && wfStatus == "Issued") {
 	//Schedule Electrical Final 15 work days from today
 		scheduleInspectDate("Electrical Final",dateAdd(null,15,"Y"),"ADMIN");  
 }
+
