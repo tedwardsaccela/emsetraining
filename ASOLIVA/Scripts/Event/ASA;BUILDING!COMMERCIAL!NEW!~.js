@@ -3,9 +3,8 @@
  * 
  */
 
-if (AInfo["Proposed Use"] == "Hazardous") {
-	var contact = getContactByType("Supervising Engineer", capId);
-	if (!contact){
+var proposedUse = getAppSpecific("Proposed Use");
+var contact = getContactByType("Supervising Engineer", capId);
+	if (proposedUse == "Hazardous" && !contact) {
 		addStdCondition("Building Permit", "Engineer Report Required");
 	}
-}
