@@ -3,6 +3,6 @@
  * 
  */
 
-if (isTaskActive("Inspection") && inspType == "Building Final" && inspResult == "Passed") {
-	closeTask("Inspection", "Final Inspection Complete", "This task is closed via script", "");
-}
+	if (isTaskActive("Inspection") && inspType == "Building Final" && inspResult == "Passed") {
+			closeTask("Inspection", "Final Inspection Complete", "Closed Via Script", "");
+	}
