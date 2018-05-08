@@ -2,6 +2,7 @@ try{
 	
 //Start Group Exercise 2
 //@TODO - Clarify with client any criteria
+//My name is Tom
 	
 	addStdCondition("Building Permit","Utility Locate");
 
